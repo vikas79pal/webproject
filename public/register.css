@@ -1,0 +1,107 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#6abadeba;  
+    font-family: 'Arial';  
+  
+    /* overflow-y: hidden;  */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+      
+} 
+
+.login{  
+    width: 400px;  
+    overflow : hidden; 
+    margin : auto; 
+    margin-top : 7px;  
+    margin-bottom : 7px;
+    padding: 50px;  
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background: white;  
+    border-radius: 35px;   
+}
+
+.padding{
+    background: transparent;
+    border: none;
+    padding : 7px;
+    border-bottom: 2px solid #000000;
+    outline: none;
+}
+
+.email{
+    width: 225px; 
+    background: transparent;
+    border: none;
+    padding : 7px;
+    border-bottom: 2px solid #000000;
+    outline: none;
+}
+
+label{  
+    color : cornflowerblue;  
+    font-size: 16px;  
+}
+
+.radio{
+    color : #6abadeba;
+    font-size: small;
+    font-style: italic;
+}
+
+.button{
+    width: 200px;  
+    height: 30px;  
+    border : none; 
+    margin-left: 25%;
+    border-radius: 17px;  
+    color: navy; 
+}
+
+.padding:hover, .email:hover, .radio:hover{
+    transform: scale(1.07);
+}
+
+.button:hover{
+    transform: scale(1.1);
+}
+span
+{
+    font-size: smaller;
+}
+
+h2{
+    text-align: center;  
+    color: navy; 
+    text-decoration: underline;
+}
+
+.compelete{
+    width: 200px;  
+    height: 30px;   
+    margin-left: 15%;
+    color: green; 
+    font-size: 20px;
+}
+
+#navbar{
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #578d91;
+    height: 50px;
+    width: 99%;
+    /* margin-left:2px ; */
+}
+li{
+    list-style: none;
+    font-family: 'Merienda', cursive;
+}
+.page{
+    font-size: 18px;
+    color: aliceblue;
+    cursor: pointer;
+}
