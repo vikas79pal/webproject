@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel = "stylesheet" href = "register.css" type = "text/css"> 
+</head>
+<body>
+    <div >
+        <ol id="navbar">
+            <li id="home" class="page">Home</li>
+            <li id="AboutUs" class="page">AboutUs</li>
+            <li id="signin" class="page">SignIn</li>
+        </ol>
+    </div>
+    
+        <form class = "login" action="./register.ejs" method="post">
+          <h2>
+            Sign Up Page
+          </h2>
+          <p><%= msg %></p>
+
+          <label for = "fname">First Name:</label><br>
+          <input type = "text" class = "padding" id = "fname" placeholder = "Enter your First Name" name="fname" value = "" required>
+          <span id = "blankMsgN1" style="color:red"></span><br><br>
+
+          <label for = "lname">Last Name:</label><br>
+          <input type = "text" class = "padding" id = "lname" placeholder = "Enter your Last Name" name="lname" value = "" required>
+          <span id = "charMsg" style="color:red"> </span><br><br>
+
+          <label for = "gender">Gender:</label><br>
+          <input type = "radio" id = "male" name = "gender" value = "male">
+          <label class = "radio" for = "male">Male</label>
+          <input type = "radio" id = "female" name = "gender" value = "female">
+          <label class = "radio" for = "female">Female</label>
+          <input type = "radio" id = "others" name = "gender" value = "others">
+          <label class = "radio" for = "others">Others</label><br><br>
+          
+          <label for = "country">Country:</label>
+          <select class = "padding" name="country" id = "country" required>
+            <option selected>Choose</option><hr>
+            <option  value = "India">India</option>
+            <option  value = "Japan">Japan</option>
+            <option  value = "Spain">Spain</option>
+            <option  value = "Russia">Russia</option>
+            <option  value = "USA">USA</option>
+            <option  value = "UK">UK</option>
+            <option  value = "New Zealand">New Zealand</option>  
+          </select><br><br>
+
+          <label for = "phone">Mobile No:</label><br>
+          <input class = "padding" type = "text" id = "phone" placeholder="Enter your Mobile No." name="mobile" value = "" required><br><br>
+
+          <label for = "email">Email:</label><br>
+          <input class = "email" type = "text" name="useremail" id = "email" placeholder="Write your Email"><br><br>
+
+          <label for = "pass">Password:</label><br>
+          <input class = "padding" type = "password" id = "pass" name= "pass" onchange = 'check();' placeholder="Password" required>
+          <span id = "message1" style="color:red"> </span><br><br>
+
+          <label for = "pass1">Retype Password:</label><br>
+          <input class = "padding" type = "password" id = "pass1" name = "pass1" onchange = 'check();' placeholder="Retype Password" required>
+          <span id = "message2" style="color : red"> </span>
+          <span id = "match"></span><br><br>
+
+          <input class = "button" type = "submit" value = "Submit" id = "sub" onclick = "validateForm()"><br><br>
+
+          <button class = "button" type = "reset" value = "Reset">Reset</button><br>
+          <span class = "compelete" id = "complete"></span>    
+          <span id = "empty"></span>
+        </form>
+        <script src = "register.js"></script>
+</body>
+</html>

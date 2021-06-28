@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <style> -->
+    <link rel="stylesheet" href="userlibrary.css">     
+    <!-- </style> -->
+   
+    <meta charset="UTF-8">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booklist</title>
+</head>
+
+<body>
+    <div >
+        <ol id="navbar">
+            <li id="home" class="page">Home</li>
+            <li ><form action="" id="search-f">
+                <input type="text" name="" id="search" placeholder="search (books)..." value="">
+            
+            </form></li>
+            <a href="/logout"> <li id="logout" class="page">LogOut</li></a>
+        </ol>
+    </div>
+    <div class="full">
+
+        <div id="top">
+            <div>
+
+                <header>
+                    <span>Books</span>List
+                </header>
+            </div>
+        </div>
+
+       
+
+        <div id="display">
+            <table id="tb">
+                <tr>
+
+                    <th class="th">Title</th>
+                    <th class="th">Author</th>
+                    <th class="th">ISBN</th>
+                    <th class="th"> Book Links</th>
+                    
+                </tr>
+                <% if(datas!=null) { %>
+                    <% datas.forEach(function(item){ %>
+                        <tr>
+                            <td class="td"><%= item.title%></td>
+                            <td class="td"><%= item.author %></td>
+                            <td class="td"><%= item.isbn%></td>
+                            <td class="td"><a id="downld" href="<%= item.link %>">Download</a></td>    
+                            
+                        </tr>
+                    <% }) %>    
+                <% } %>        
+               
+                
+
+
+            </table>
+        </div>
+    </div>
+    <script src="userlibrary.js"></script>
+    
+</body>
+
+</html>
