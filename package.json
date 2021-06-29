@@ -1,8 +1,8 @@
 {
-  "name": "bookfinder",
+  "name": "bookfinder5",
   "version": "1.0.0",
   "description": "library web app",
-  "main": "index.js",
+  "main": "src/server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "agent-base": "^6.0.2",
