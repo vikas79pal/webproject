@@ -1,7 +1,7 @@
 {
   "name": "webproject",
   "version": "1.0.0",
-  "main": "src/server.js",
+  "main": "sr/server.js",
   "dependencies": {
     "agent-base": "^6.0.2",
     "bcrypt": "^5.0.1",
@@ -34,7 +34,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server.js"
+    "start": "nodemn src/server.js"
   },
   "repository": {
     "type": "git",
